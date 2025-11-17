@@ -1,0 +1,70 @@
+# Project Configuration File
+
+project:
+  name: "Helmet Violation Detection System"
+  version: "1.0.0"
+  author: "Htoo Min Htet"
+  
+paths:
+  data_dir: "../data"
+  models_dir: "../models"
+  results_dir: "../results"
+  
+training:
+  # YOLO training parameters
+  yolo:
+    model_size: "n"  # n, s, m, l, x
+    epochs: 100
+    batch_size: 16
+    img_size: 640
+    patience: 15
+    device: "0"  # GPU ID
+    workers: 4
+    
+  # Data augmentation
+  augmentation:
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    degrees: 0.0
+    translate: 0.1
+    scale: 0.5
+    fliplr: 0.5
+    mosaic: 1.0
+
+detection:
+  # Confidence thresholds
+  conf_threshold:
+    motorcycle: 0.5
+    helmet: 0.4
+    plate: 0.5
+  
+  # Association parameters
+  association:
+    iou_threshold: 0.2
+    max_distance: 100
+    
+  # Pre-trained model
+  motorcycle_model: "yolov8n.pt"
+  motorcycle_class_id: 3  # COCO class for motorcycle
+
+ocr:
+  # EasyOCR settings
+  languages: ['th', 'en']
+  gpu: true
+  confidence_threshold: 0.4
+
+visualization:
+  colors:
+    motorcycle: [0, 255, 0]          # Green (RGB)
+    with_helmet: [0, 255, 255]       # Cyan/Yellow (RGB)
+    without_helmet: [255, 0, 0]      # RED (RGB) ← RED for violations!
+    plate: [255, 165, 0]             # Orange (RGB)
+  
+  line_thickness: 2
+  font_scale: 0.6
+
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
+  rotation: "10 MB"

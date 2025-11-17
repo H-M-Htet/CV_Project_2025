@@ -1,0 +1,49 @@
+cd ~/Documents/helmet_detection_project/src
+
+# Basic usage (no output video, just analysis)
+python detect_violations.py \
+  --model ../models/yolo/best0.1.pt \
+  --video /path/to/your/video.mp4
+
+# Full usage (with output video and saved frames)
+python detect_violations.py \
+  --model ../models/yolo/best0.1.pt \
+  --video /path/to/your/video.mp4 \
+  --output ../results/output_video.mp4 \
+  --save-frames \
+  --frame-skip 1
+
+# Fast processing (skip frames)
+python detect_violations.py \
+  --model ../models/yolo/best0.1.pt \
+  --video /path/to/your/video.mp4 \
+  --output ../results/output_video.mp4 \
+  --frame-skip 3  # Process every 3rd frame
+```
+
+---
+
+## 📋 WHAT IT DOES
+
+1. ✅ Loads video
+2. ✅ Processes frame by frame
+3. ✅ Detects motorcycles (pre-trained)
+4. ✅ Detects riders + helmet status (your model)
+5. ✅ Associates riders with motorcycles
+6. ✅ Finds violations
+7. ✅ Draws bounding boxes (RED for violations)
+8. ✅ Saves output video (optional)
+9. ✅ Saves violation frames (optional)
+10. ✅ Generates JSON summary
+
+---
+
+## 📊 OUTPUT FILES
+```
+results/
+├── output_video.mp4              # Annotated video
+├── violation_frames/             # Individual violation frames
+│   ├── violation_frame_000123.jpg
+│   ├── violation_frame_000456.jpg
+│   └── ...
+└── violation_summary.json        # Summary with timestamps

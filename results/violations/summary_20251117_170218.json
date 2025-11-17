@@ -1,0 +1,8 @@
+{
+  "video_path": "../data/test_videos/driving_without_helmet.mp4",
+  "total_frames": 1801,
+  "frames_processed": 900,
+  "total_violations": 0,
+  "violation_frames": [],
+  "output_video": "../results/output_video.mp4"
+}

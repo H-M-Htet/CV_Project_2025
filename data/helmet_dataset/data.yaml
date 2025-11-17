@@ -1,0 +1,30 @@
+# Helmet Detection Dataset Configuration
+# Association-based violation detection system
+
+# Dataset paths (will be updated for Puffer)
+path: ../data/helmet_dataset
+train: train/images
+val: valid/images
+test: test/images
+
+# Number of classes
+nc: 2
+
+# Class names
+names:
+  0: without_helmet
+  1: with_helmet
+
+# Class descriptions
+# 0: Person wearing helmet (compliant)
+# 1: Person not wearing helmet (violation)
+
+# Dataset statistics (update after inspection)
+# train_images: TBD
+# val_images: TBD
+# total_objects: TBD
+
+# Notes:
+# - Motorcycle detection uses pre-trained YOLOv8 (COCO class 3)
+# - This model focuses on helmet status detection only
+# - Association logic connects riders with motorcycles post-detection

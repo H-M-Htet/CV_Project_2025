@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (large)
+data/helmet_dataset/train/
+data/helmet_dataset/valid/
+data/helmet_dataset/test/
+data/test_videos/*.mp4
+data/test_videos/*.avi
+
+# Model files (large)
+models/**/*.pt
+models/**/*.pth
+models/**/*.weights
+
+# Results
+results/violations/*.jpg
+results/violations/*.png
+results/logs/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
