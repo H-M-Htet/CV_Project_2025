@@ -56,3 +56,8 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+echo "results/output_video.mp4" >> .gitignore
+# or ignore all videos in results:
+# echo "results/*.mp4" >> .gitignore
+git add .gitignore

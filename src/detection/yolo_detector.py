@@ -21,7 +21,7 @@ class YOLODetector:
         self,
         motorcycle_model_path: str = 'yolov8n.pt',
         helmet_model_path: Optional[str] = None,
-        plate_model_path: Optional[str] = None,
+        plate_model_path: Optional[str] = '..models/plate/best.pt',
         device: str = '0'
     ):
         """
