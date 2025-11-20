@@ -6,12 +6,12 @@ python detect_violations.py \
   --video /path/to/your/video.mp4
 
 # Full usage (with output video and saved frames)
-python detect_violations.py \
+python detect_violations_with_ocr.py \
   --model ../models/yolo/best0.1.pt \
-  --video /path/to/your/video.mp4 \
+  --video ../data/test_videos/TU_test.mp4
   --output ../results/output_video.mp4 \
   --save-frames \
-  --frame-skip 1
+  --frame-skip 2
 
 # Fast processing (skip frames)
 python detect_violations.py \
@@ -47,3 +47,275 @@ results/
 │   ├── violation_frame_000456.jpg
 │   └── ...
 └── violation_summary.json        # Summary with timestamps
+
+
+
+
+python3 << 'EOF'
+from detection.yolo_detector import YOLODetector
+from association.associator import ObjectAssociator
+from detection.visualizer import DetectionVisualizer
+import cv2
+
+print("Testing 3-class pipeline...")
+
+# Update paths with your actual model paths
+detector = YOLODetector(
+    motorcycle_model_path='yolov8n.pt',
+    helmet_model_path='../models/yolov12/bestv12.pt',
+    plate_model_path='../models/plate/best_plate.pt'
+)
+
+associator = ObjectAssociator()
+visualizer = DetectionVisualizer()
+
+# Test
+img = cv2.imread('../data/test_videos/Nohelmet_Plate1.jpg')
+motorcycles, riders, plates = detector.detect_all(img)
+violations = associator.process_frame(motorcycles, riders, plates)
+
+print(f"✅ Results:")
+print(f"   Motorcycles: {len(motorcycles)}")
+print(f"   Riders: {len(riders)}")
+print(f"   Plates: {len(plates)}")
+print(f"   Violations: {len(violations)}")
+
+# Save result
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+result = visualizer.draw_violations(img_rgb, violations)
+cv2.imwrite('../results/test_3class.jpg', cv2.cvtColor(result, cv2.COLOR_RGB2BGR))
+print("✓ Saved: results/test_3class.jpg")
+EOF
+
+cd ~/Desktop/Project_CV_2025/helmet_detection/src
+
+python3 << 'EOF'
+from detection.yolo_detector import YOLODetector
+from association.associator import ObjectAssociator
+from ocr.thai_ocr import ThaiPlateOCR
+import cv2
+
+print("Testing OCR on violations...\n")
+
+detector = YOLODetector(
+    motorcycle_model_path='yolov8n.pt',
+    helmet_model_path='../models/yolov12/bestv12.pt',
+    plate_model_path='../models/plate/best_plate.pt'
+)
+associator = ObjectAssociator()
+ocr = ThaiPlateOCR(use_gpu=True)
+
+img = cv2.imread('../data/test_videos/Nohelmet_Plate.jpg')
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+motorcycles, riders, plates = detector.detect_all(img)
+violations = associator.process_frame(motorcycles, riders, plates)
+
+print(f"Found {len(violations)} violations\n")
+
+# Run OCR on each violation
+for i, v in enumerate(violations):
+    print(f"Violation {i+1}:")
+    
+    if v.get('plate_bbox'):
+        print(f"  Plate detected: YES")
+        print(f"  Plate bbox: {v['plate_bbox']}")
+        
+        # Extract text
+        result = ocr.extract_text(img_rgb, v['plate_bbox'], preprocess=True)
+        
+        if result:
+            print(f"  ✅ OCR SUCCESS!")
+            print(f"     Text: '{result['text']}'")
+            print(f"     Confidence: {result['confidence']:.2%}")
+        else:
+            print(f"  ❌ Could not read plate")
+    else:
+        print(f"  Plate detected: NO")
+    print()
+
+print("✅ OCR test complete!")
+EOF
+```
+
+---
+
+## What You'll See
+```
+Violation 1:
+  Plate detected: YES
+  Plate bbox: [288.18, 369.37, 313.38, 387.92]
+  ✅ OCR SUCCESS!
+     Text: 'กข 1234'
+     Confidence: 87%
+```
+
+---
+
+## The Flow (Summary)
+```
+1. Plate detector finds box: [x1, y1, x2, y2]
+   ↓
+2. OCR crops that region: plate_img = image[y1:y2, x1:x2]
+   ↓
+3. Preprocess (grayscale, denoise, threshold)
+   ↓
+4. EasyOCR reads text: "กข 1234"
+   ↓
+5. Return text + confidence
+
+cd ~/Desktop/Project_CV_2025/helmet_detection/src
+
+python3 << 'EOF'
+"""
+Detect plates and save cropped regions
+"""
+
+
+cd ~/Desktop/Project_CV_2025/helmet_detection/src
+
+python3 << 'EOF'
+"""
+Detect plates and save cropped regions
+"""
+from detection.yolo_detector import YOLODetector
+import cv2
+from pathlib import Path
+
+print("="*60)
+print("PLATE DETECTION & CROPPING")
+print("="*60)
+
+# Initialize detector
+detector = YOLODetector(
+    motorcycle_model_path='yolov8n.pt',
+    helmet_model_path='../models/yolov12/bestv12.pt',
+    plate_model_path='../models/plate/best_plate.pt'
+)
+
+# Load image
+img_path = '../data/test_videos/Nohelmet_Plate.jpg'
+img = cv2.imread(img_path)
+
+print(f"\nImage: {img_path}")
+print(f"Size: {img.shape}")
+
+# Detect plates
+print("\nDetecting plates...")
+_, _, plates = detector.detect_all(img)
+print(f"Found: {len(plates)} plates")
+
+if len(plates) == 0:
+    print("\n❌ No plates detected!")
+else:
+    # Create output directory
+    output_dir = Path('../results/plate_crops')
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    print(f"\nCropping and saving...\n")
+    
+    for i, plate in enumerate(plates):
+        # Get bbox
+        x1, y1, x2, y2 = map(int, plate['bbox'])
+        
+        print(f"Plate {i+1}:")
+        print(f"  BBox: [{x1}, {y1}, {x2}, {y2}]")
+        print(f"  Size: {x2-x1} x {y2-y1} pixels")
+        print(f"  Confidence: {plate['conf']:.2%}")
+        
+        # Crop plate region
+        plate_crop = img[y1:y2, x1:x2].copy()
+        
+        # Save cropped plate
+        output_path = output_dir / f'plate_{i+1}.jpg'
+        cv2.imwrite(str(output_path), plate_crop)
+        
+        print(f"  ✓ Saved: {output_path}")
+        print()
+
+print("="*60)
+print(f"✅ All plates saved to: {output_dir}")
+print("="*60)
+EOF
+
+cd ~/Desktop/Project_CV_2025/helmet_detection/src
+
+python3 << 'EOF'
+"""
+Detect plates, crop, and UPSCALE for better viewing
+"""
+from detection.yolo_detector import YOLODetector
+import cv2
+from pathlib import Path
+
+print("="*60)
+print("PLATE DETECTION & UPSCALED CROPPING")
+print("="*60)
+
+detector = YOLODetector(
+    motorcycle_model_path='yolov8n.pt',
+    helmet_model_path='../models/yolov12/bestv12.pt',
+    plate_model_path='../models/plate/best_plate.pt'
+)
+
+# Load image
+img_path = '../data/test_videos/Nohelmet_Plate.jpg'
+img = cv2.imread(img_path)
+
+print(f"\nImage: {img_path}")
+
+# Detect plates
+_, _, plates = detector.detect_all(img)
+print(f"Found: {len(plates)} plates\n")
+
+if len(plates) > 0:
+    output_dir = Path('../results/plate_crops_upscaled')
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    for i, plate in enumerate(plates):
+        x1, y1, x2, y2 = map(int, plate['bbox'])
+        
+        # Add padding
+        padding = 10
+        x1 = max(0, x1 - padding)
+        y1 = max(0, y1 - padding)
+        x2 = min(img.shape[1], x2 + padding)
+        y2 = min(img.shape[0], y2 + padding)
+        
+        # Crop
+        plate_crop = img[y1:y2, x1:x2].copy()
+        
+        h, w = plate_crop.shape[:2]
+        print(f"Plate {i+1}:")
+        print(f"  Original size: {w}x{h}")
+        
+        # UPSCALE 4x
+        scale = 4
+        new_w = w * scale
+        new_h = h * scale
+        plate_upscaled = cv2.resize(plate_crop, (new_w, new_h), 
+                                    interpolation=cv2.INTER_CUBIC)
+        
+        print(f"  Upscaled size: {new_w}x{new_h}")
+        
+        # Save both versions
+        cv2.imwrite(str(output_dir / f'plate_{i+1}_original.jpg'), plate_crop)
+        cv2.imwrite(str(output_dir / f'plate_{i+1}_upscaled_4x.jpg'), plate_upscaled)
+        
+        print(f"  ✓ Saved: {output_dir / f'plate_{i+1}_upscaled_4x.jpg'}")
+        print()
+    
+    print(f"✅ Saved to: {output_dir}")
+else:
+    print("❌ No plates detected")
+EOF
+
+
+#####FinalPipeLine####
+python3 main_pipeline.py \
+  --video ../data/test_videos/TU_test.mp4 \
+  --helmet-model ../models/yolov/best_H_0.2.pt \
+  --plate-model ../models/plate/best_P_0.1.pt \
+  --output-dir ../results/final_test \
+  --roi 100 200 800 200 800 600 100 600
+```

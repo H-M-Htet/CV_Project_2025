@@ -1,0 +1,2395 @@
+{
+  "video": "../data/test_videos/TU_test1.mp4",
+  "frames_processed": 1505,
+  "violations": [
+    {
+      "frame": 52,
+      "timestamp": 0.8666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3786805272102356,
+          "motorcycle_conf": 0.3786805272102356
+        }
+      ]
+    },
+    {
+      "frame": 55,
+      "timestamp": 0.9166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.42974522709846497,
+          "motorcycle_conf": 0.42974522709846497
+        }
+      ]
+    },
+    {
+      "frame": 56,
+      "timestamp": 0.9333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.808014452457428,
+          "motorcycle_conf": 0.808014452457428
+        }
+      ]
+    },
+    {
+      "frame": 57,
+      "timestamp": 0.95,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.31822922825813293,
+          "motorcycle_conf": 0.31822922825813293
+        }
+      ]
+    },
+    {
+      "frame": 67,
+      "timestamp": 1.1166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.854724109172821,
+          "motorcycle_conf": 0.854724109172821
+        }
+      ]
+    },
+    {
+      "frame": 68,
+      "timestamp": 1.1333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.878909170627594,
+          "motorcycle_conf": 0.878909170627594
+        }
+      ]
+    },
+    {
+      "frame": 69,
+      "timestamp": 1.15,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.9012899994850159,
+          "motorcycle_conf": 0.9012899994850159
+        }
+      ]
+    },
+    {
+      "frame": 70,
+      "timestamp": 1.1666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8612647652626038,
+          "motorcycle_conf": 0.8612647652626038
+        }
+      ]
+    },
+    {
+      "frame": 71,
+      "timestamp": 1.1833333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8575287461280823,
+          "motorcycle_conf": 0.8575287461280823
+        }
+      ]
+    },
+    {
+      "frame": 72,
+      "timestamp": 1.2,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8463361263275146,
+          "motorcycle_conf": 0.8463361263275146
+        }
+      ]
+    },
+    {
+      "frame": 73,
+      "timestamp": 1.2166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8697476387023926,
+          "motorcycle_conf": 0.8697476387023926
+        }
+      ]
+    },
+    {
+      "frame": 74,
+      "timestamp": 1.2333333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8576552867889404,
+          "motorcycle_conf": 0.8576552867889404
+        }
+      ]
+    },
+    {
+      "frame": 75,
+      "timestamp": 1.25,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8780972361564636,
+          "motorcycle_conf": 0.8780972361564636
+        }
+      ]
+    },
+    {
+      "frame": 76,
+      "timestamp": 1.2666666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8653693199157715,
+          "motorcycle_conf": 0.8653693199157715
+        }
+      ]
+    },
+    {
+      "frame": 77,
+      "timestamp": 1.2833333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8427876234054565,
+          "motorcycle_conf": 0.8427876234054565
+        }
+      ]
+    },
+    {
+      "frame": 78,
+      "timestamp": 1.3,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8476674556732178,
+          "motorcycle_conf": 0.8476674556732178
+        }
+      ]
+    },
+    {
+      "frame": 79,
+      "timestamp": 1.3166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8325521349906921,
+          "motorcycle_conf": 0.8325521349906921
+        }
+      ]
+    },
+    {
+      "frame": 80,
+      "timestamp": 1.3333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8538511991500854,
+          "motorcycle_conf": 0.8538511991500854
+        }
+      ]
+    },
+    {
+      "frame": 81,
+      "timestamp": 1.35,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7890158295631409,
+          "motorcycle_conf": 0.7890158295631409
+        }
+      ]
+    },
+    {
+      "frame": 82,
+      "timestamp": 1.3666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8106768727302551,
+          "motorcycle_conf": 0.8106768727302551
+        }
+      ]
+    },
+    {
+      "frame": 83,
+      "timestamp": 1.3833333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.776220440864563,
+          "motorcycle_conf": 0.776220440864563
+        }
+      ]
+    },
+    {
+      "frame": 84,
+      "timestamp": 1.4,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7144665718078613,
+          "motorcycle_conf": 0.7144665718078613
+        }
+      ]
+    },
+    {
+      "frame": 85,
+      "timestamp": 1.4166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7579587697982788,
+          "motorcycle_conf": 0.7579587697982788
+        }
+      ]
+    },
+    {
+      "frame": 86,
+      "timestamp": 1.4333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8376789093017578,
+          "motorcycle_conf": 0.8376789093017578
+        }
+      ]
+    },
+    {
+      "frame": 87,
+      "timestamp": 1.45,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.822704017162323,
+          "motorcycle_conf": 0.822704017162323
+        }
+      ]
+    },
+    {
+      "frame": 88,
+      "timestamp": 1.4666666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8100392818450928,
+          "motorcycle_conf": 0.8100392818450928
+        }
+      ]
+    },
+    {
+      "frame": 89,
+      "timestamp": 1.4833333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7676493525505066,
+          "motorcycle_conf": 0.7676493525505066
+        }
+      ]
+    },
+    {
+      "frame": 90,
+      "timestamp": 1.5,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7992240786552429,
+          "motorcycle_conf": 0.7992240786552429
+        }
+      ]
+    },
+    {
+      "frame": 91,
+      "timestamp": 1.5166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7960624098777771,
+          "motorcycle_conf": 0.7960624098777771
+        }
+      ]
+    },
+    {
+      "frame": 92,
+      "timestamp": 1.5333333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8229215741157532,
+          "motorcycle_conf": 0.8229215741157532
+        }
+      ]
+    },
+    {
+      "frame": 93,
+      "timestamp": 1.55,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8367984890937805,
+          "motorcycle_conf": 0.8367984890937805
+        }
+      ]
+    },
+    {
+      "frame": 94,
+      "timestamp": 1.5666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8395414352416992,
+          "motorcycle_conf": 0.8395414352416992
+        }
+      ]
+    },
+    {
+      "frame": 95,
+      "timestamp": 1.5833333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8288002610206604,
+          "motorcycle_conf": 0.8288002610206604
+        }
+      ]
+    },
+    {
+      "frame": 96,
+      "timestamp": 1.6,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8371534943580627,
+          "motorcycle_conf": 0.8371534943580627
+        }
+      ]
+    },
+    {
+      "frame": 97,
+      "timestamp": 1.6166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8524272441864014,
+          "motorcycle_conf": 0.8524272441864014
+        }
+      ]
+    },
+    {
+      "frame": 98,
+      "timestamp": 1.6333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8629385232925415,
+          "motorcycle_conf": 0.8629385232925415
+        }
+      ]
+    },
+    {
+      "frame": 99,
+      "timestamp": 1.65,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8510572910308838,
+          "motorcycle_conf": 0.8510572910308838
+        }
+      ]
+    },
+    {
+      "frame": 100,
+      "timestamp": 1.6666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8368600606918335,
+          "motorcycle_conf": 0.8368600606918335
+        }
+      ]
+    },
+    {
+      "frame": 101,
+      "timestamp": 1.6833333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7751405239105225,
+          "motorcycle_conf": 0.7751405239105225
+        }
+      ]
+    },
+    {
+      "frame": 102,
+      "timestamp": 1.7,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8074911236763,
+          "motorcycle_conf": 0.8074911236763
+        }
+      ]
+    },
+    {
+      "frame": 103,
+      "timestamp": 1.7166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8236224055290222,
+          "motorcycle_conf": 0.8236224055290222
+        }
+      ]
+    },
+    {
+      "frame": 104,
+      "timestamp": 1.7333333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8497077226638794,
+          "motorcycle_conf": 0.8497077226638794
+        }
+      ]
+    },
+    {
+      "frame": 105,
+      "timestamp": 1.75,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8517496585845947,
+          "motorcycle_conf": 0.8517496585845947
+        }
+      ]
+    },
+    {
+      "frame": 106,
+      "timestamp": 1.7666666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7976506352424622,
+          "motorcycle_conf": 0.7976506352424622
+        }
+      ]
+    },
+    {
+      "frame": 107,
+      "timestamp": 1.7833333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7712628245353699,
+          "motorcycle_conf": 0.7712628245353699
+        }
+      ]
+    },
+    {
+      "frame": 108,
+      "timestamp": 1.8,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8609829545021057,
+          "motorcycle_conf": 0.8609829545021057
+        }
+      ]
+    },
+    {
+      "frame": 109,
+      "timestamp": 1.8166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.851298451423645,
+          "motorcycle_conf": 0.851298451423645
+        }
+      ]
+    },
+    {
+      "frame": 110,
+      "timestamp": 1.8333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8525382280349731,
+          "motorcycle_conf": 0.8525382280349731
+        }
+      ]
+    },
+    {
+      "frame": 111,
+      "timestamp": 1.85,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8311259150505066,
+          "motorcycle_conf": 0.8311259150505066
+        }
+      ]
+    },
+    {
+      "frame": 112,
+      "timestamp": 1.8666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8405558466911316,
+          "motorcycle_conf": 0.8405558466911316
+        }
+      ]
+    },
+    {
+      "frame": 113,
+      "timestamp": 1.8833333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8595073819160461,
+          "motorcycle_conf": 0.8595073819160461
+        }
+      ]
+    },
+    {
+      "frame": 114,
+      "timestamp": 1.9,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7981542944908142,
+          "motorcycle_conf": 0.7981542944908142
+        }
+      ]
+    },
+    {
+      "frame": 115,
+      "timestamp": 1.9166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8343546390533447,
+          "motorcycle_conf": 0.8343546390533447
+        }
+      ]
+    },
+    {
+      "frame": 116,
+      "timestamp": 1.9333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8192353844642639,
+          "motorcycle_conf": 0.8192353844642639
+        }
+      ]
+    },
+    {
+      "frame": 117,
+      "timestamp": 1.95,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7776904702186584,
+          "motorcycle_conf": 0.7776904702186584
+        }
+      ]
+    },
+    {
+      "frame": 118,
+      "timestamp": 1.9666666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7444413900375366,
+          "motorcycle_conf": 0.7444413900375366
+        }
+      ]
+    },
+    {
+      "frame": 119,
+      "timestamp": 1.9833333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7940080165863037,
+          "motorcycle_conf": 0.7940080165863037
+        }
+      ]
+    },
+    {
+      "frame": 120,
+      "timestamp": 2.0,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8182919025421143,
+          "motorcycle_conf": 0.8182919025421143
+        }
+      ]
+    },
+    {
+      "frame": 121,
+      "timestamp": 2.0166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7684698700904846,
+          "motorcycle_conf": 0.7684698700904846
+        }
+      ]
+    },
+    {
+      "frame": 122,
+      "timestamp": 2.033333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.771488606929779,
+          "motorcycle_conf": 0.771488606929779
+        }
+      ]
+    },
+    {
+      "frame": 123,
+      "timestamp": 2.05,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7992322444915771,
+          "motorcycle_conf": 0.7992322444915771
+        }
+      ]
+    },
+    {
+      "frame": 124,
+      "timestamp": 2.066666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7731830477714539,
+          "motorcycle_conf": 0.7731830477714539
+        }
+      ]
+    },
+    {
+      "frame": 125,
+      "timestamp": 2.0833333333333335,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6714563965797424,
+          "motorcycle_conf": 0.6714563965797424
+        }
+      ]
+    },
+    {
+      "frame": 126,
+      "timestamp": 2.1,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5830143690109253,
+          "motorcycle_conf": 0.5830143690109253
+        }
+      ]
+    },
+    {
+      "frame": 127,
+      "timestamp": 2.1166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.516810417175293,
+          "motorcycle_conf": 0.516810417175293
+        }
+      ]
+    },
+    {
+      "frame": 128,
+      "timestamp": 2.1333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5660829544067383,
+          "motorcycle_conf": 0.5660829544067383
+        }
+      ]
+    },
+    {
+      "frame": 129,
+      "timestamp": 2.15,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6575809717178345,
+          "motorcycle_conf": 0.6575809717178345
+        }
+      ]
+    },
+    {
+      "frame": 130,
+      "timestamp": 2.1666666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6922327280044556,
+          "motorcycle_conf": 0.6922327280044556
+        }
+      ]
+    },
+    {
+      "frame": 131,
+      "timestamp": 2.183333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4806559681892395,
+          "motorcycle_conf": 0.4806559681892395
+        }
+      ]
+    },
+    {
+      "frame": 136,
+      "timestamp": 2.2666666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5521895885467529,
+          "motorcycle_conf": 0.5521895885467529
+        }
+      ]
+    },
+    {
+      "frame": 137,
+      "timestamp": 2.283333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5869475603103638,
+          "motorcycle_conf": 0.5869475603103638
+        }
+      ]
+    },
+    {
+      "frame": 138,
+      "timestamp": 2.3,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6454973816871643,
+          "motorcycle_conf": 0.6454973816871643
+        }
+      ]
+    },
+    {
+      "frame": 139,
+      "timestamp": 2.316666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6916335225105286,
+          "motorcycle_conf": 0.6916335225105286
+        }
+      ]
+    },
+    {
+      "frame": 140,
+      "timestamp": 2.3333333333333335,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7734791040420532,
+          "motorcycle_conf": 0.7734791040420532
+        }
+      ]
+    },
+    {
+      "frame": 141,
+      "timestamp": 2.35,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.83735591173172,
+          "motorcycle_conf": 0.83735591173172
+        }
+      ]
+    },
+    {
+      "frame": 142,
+      "timestamp": 2.3666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8371725678443909,
+          "motorcycle_conf": 0.8371725678443909
+        }
+      ]
+    },
+    {
+      "frame": 143,
+      "timestamp": 2.3833333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8178644180297852,
+          "motorcycle_conf": 0.8178644180297852
+        }
+      ]
+    },
+    {
+      "frame": 144,
+      "timestamp": 2.4,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7873371243476868,
+          "motorcycle_conf": 0.7873371243476868
+        }
+      ]
+    },
+    {
+      "frame": 145,
+      "timestamp": 2.4166666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6964507699012756,
+          "motorcycle_conf": 0.6964507699012756
+        }
+      ]
+    },
+    {
+      "frame": 146,
+      "timestamp": 2.433333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6459062099456787,
+          "motorcycle_conf": 0.6459062099456787
+        }
+      ]
+    },
+    {
+      "frame": 147,
+      "timestamp": 2.45,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6641756892204285,
+          "motorcycle_conf": 0.6641756892204285
+        }
+      ]
+    },
+    {
+      "frame": 148,
+      "timestamp": 2.466666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7143140435218811,
+          "motorcycle_conf": 0.7143140435218811
+        }
+      ]
+    },
+    {
+      "frame": 149,
+      "timestamp": 2.4833333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6421098709106445,
+          "motorcycle_conf": 0.6421098709106445
+        }
+      ]
+    },
+    {
+      "frame": 150,
+      "timestamp": 2.5,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6379066705703735,
+          "motorcycle_conf": 0.6379066705703735
+        }
+      ]
+    },
+    {
+      "frame": 151,
+      "timestamp": 2.5166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.75246661901474,
+          "motorcycle_conf": 0.75246661901474
+        }
+      ]
+    },
+    {
+      "frame": 152,
+      "timestamp": 2.533333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8033358454704285,
+          "motorcycle_conf": 0.8033358454704285
+        }
+      ]
+    },
+    {
+      "frame": 153,
+      "timestamp": 2.55,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8376861810684204,
+          "motorcycle_conf": 0.8376861810684204
+        }
+      ]
+    },
+    {
+      "frame": 154,
+      "timestamp": 2.566666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8082126379013062,
+          "motorcycle_conf": 0.8082126379013062
+        }
+      ]
+    },
+    {
+      "frame": 155,
+      "timestamp": 2.5833333333333335,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7959532737731934,
+          "motorcycle_conf": 0.7959532737731934
+        }
+      ]
+    },
+    {
+      "frame": 156,
+      "timestamp": 2.6,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7507868409156799,
+          "motorcycle_conf": 0.7507868409156799
+        }
+      ]
+    },
+    {
+      "frame": 157,
+      "timestamp": 2.6166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7609124779701233,
+          "motorcycle_conf": 0.7609124779701233
+        }
+      ]
+    },
+    {
+      "frame": 158,
+      "timestamp": 2.6333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7756221294403076,
+          "motorcycle_conf": 0.7756221294403076
+        }
+      ]
+    },
+    {
+      "frame": 159,
+      "timestamp": 2.65,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6611455678939819,
+          "motorcycle_conf": 0.6611455678939819
+        }
+      ]
+    },
+    {
+      "frame": 160,
+      "timestamp": 2.6666666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4264439046382904,
+          "motorcycle_conf": 0.4264439046382904
+        }
+      ]
+    },
+    {
+      "frame": 169,
+      "timestamp": 2.816666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.32284441590309143,
+          "motorcycle_conf": 0.32284441590309143
+        }
+      ]
+    },
+    {
+      "frame": 171,
+      "timestamp": 2.85,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3007010817527771,
+          "motorcycle_conf": 0.3007010817527771
+        }
+      ]
+    },
+    {
+      "frame": 172,
+      "timestamp": 2.8666666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5697584748268127,
+          "motorcycle_conf": 0.5697584748268127
+        }
+      ]
+    },
+    {
+      "frame": 173,
+      "timestamp": 2.8833333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5160788893699646,
+          "motorcycle_conf": 0.5160788893699646
+        }
+      ]
+    },
+    {
+      "frame": 174,
+      "timestamp": 2.9,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3327268958091736,
+          "motorcycle_conf": 0.3327268958091736
+        }
+      ]
+    },
+    {
+      "frame": 176,
+      "timestamp": 2.933333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7047820687294006,
+          "motorcycle_conf": 0.7047820687294006
+        }
+      ]
+    },
+    {
+      "frame": 177,
+      "timestamp": 2.95,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7409257888793945,
+          "motorcycle_conf": 0.7409257888793945
+        }
+      ]
+    },
+    {
+      "frame": 178,
+      "timestamp": 2.966666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.42649710178375244,
+          "motorcycle_conf": 0.42649710178375244
+        }
+      ]
+    },
+    {
+      "frame": 179,
+      "timestamp": 2.9833333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.48806309700012207,
+          "motorcycle_conf": 0.48806309700012207
+        }
+      ]
+    },
+    {
+      "frame": 181,
+      "timestamp": 3.0166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.39080125093460083,
+          "motorcycle_conf": 0.39080125093460083
+        }
+      ]
+    },
+    {
+      "frame": 186,
+      "timestamp": 3.1,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4264909029006958,
+          "motorcycle_conf": 0.4264909029006958
+        }
+      ]
+    },
+    {
+      "frame": 187,
+      "timestamp": 3.1166666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.41061118245124817,
+          "motorcycle_conf": 0.41061118245124817
+        }
+      ]
+    },
+    {
+      "frame": 188,
+      "timestamp": 3.1333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6529128551483154,
+          "motorcycle_conf": 0.6529128551483154
+        }
+      ]
+    },
+    {
+      "frame": 189,
+      "timestamp": 3.15,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7247050404548645,
+          "motorcycle_conf": 0.7247050404548645
+        }
+      ]
+    },
+    {
+      "frame": 190,
+      "timestamp": 3.1666666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7561131119728088,
+          "motorcycle_conf": 0.7561131119728088
+        }
+      ]
+    },
+    {
+      "frame": 191,
+      "timestamp": 3.183333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5692434906959534,
+          "motorcycle_conf": 0.5692434906959534
+        }
+      ]
+    },
+    {
+      "frame": 192,
+      "timestamp": 3.2,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.609605610370636,
+          "motorcycle_conf": 0.609605610370636
+        }
+      ]
+    },
+    {
+      "frame": 193,
+      "timestamp": 3.216666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6593425273895264,
+          "motorcycle_conf": 0.6593425273895264
+        }
+      ]
+    },
+    {
+      "frame": 194,
+      "timestamp": 3.2333333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6633281707763672,
+          "motorcycle_conf": 0.6633281707763672
+        }
+      ]
+    },
+    {
+      "frame": 195,
+      "timestamp": 3.25,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.616863489151001,
+          "motorcycle_conf": 0.616863489151001
+        }
+      ]
+    },
+    {
+      "frame": 201,
+      "timestamp": 3.35,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.35198530554771423,
+          "motorcycle_conf": 0.35198530554771423
+        }
+      ]
+    },
+    {
+      "frame": 204,
+      "timestamp": 3.4,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.39447465538978577,
+          "motorcycle_conf": 0.39447465538978577
+        }
+      ]
+    },
+    {
+      "frame": 208,
+      "timestamp": 3.466666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.30088022351264954,
+          "motorcycle_conf": 0.30088022351264954
+        }
+      ]
+    },
+    {
+      "frame": 213,
+      "timestamp": 3.55,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.35946619510650635,
+          "motorcycle_conf": 0.35946619510650635
+        }
+      ]
+    },
+    {
+      "frame": 214,
+      "timestamp": 3.566666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5435532927513123,
+          "motorcycle_conf": 0.5435532927513123
+        }
+      ]
+    },
+    {
+      "frame": 215,
+      "timestamp": 3.5833333333333335,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6362975835800171,
+          "motorcycle_conf": 0.6362975835800171
+        }
+      ]
+    },
+    {
+      "frame": 379,
+      "timestamp": 6.316666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5011508464813232,
+          "motorcycle_conf": 0.5011508464813232
+        }
+      ]
+    },
+    {
+      "frame": 380,
+      "timestamp": 6.333333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4927273988723755,
+          "motorcycle_conf": 0.4927273988723755
+        }
+      ]
+    },
+    {
+      "frame": 389,
+      "timestamp": 6.483333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3209531605243683,
+          "motorcycle_conf": 0.3209531605243683
+        }
+      ]
+    },
+    {
+      "frame": 848,
+      "timestamp": 14.133333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6620383262634277,
+          "motorcycle_conf": 0.6620383262634277
+        }
+      ]
+    },
+    {
+      "frame": 849,
+      "timestamp": 14.15,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6107869744300842,
+          "motorcycle_conf": 0.6107869744300842
+        }
+      ]
+    },
+    {
+      "frame": 850,
+      "timestamp": 14.166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.49556639790534973,
+          "motorcycle_conf": 0.49556639790534973
+        }
+      ]
+    },
+    {
+      "frame": 900,
+      "timestamp": 15.0,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4149002730846405,
+          "motorcycle_conf": 0.4149002730846405
+        }
+      ]
+    },
+    {
+      "frame": 901,
+      "timestamp": 15.016666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5870810747146606,
+          "motorcycle_conf": 0.5870810747146606
+        }
+      ]
+    },
+    {
+      "frame": 902,
+      "timestamp": 15.033333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6789861917495728,
+          "motorcycle_conf": 0.6789861917495728
+        }
+      ]
+    },
+    {
+      "frame": 903,
+      "timestamp": 15.05,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.49951958656311035,
+          "motorcycle_conf": 0.49951958656311035
+        }
+      ]
+    },
+    {
+      "frame": 904,
+      "timestamp": 15.066666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6900532841682434,
+          "motorcycle_conf": 0.6900532841682434
+        }
+      ]
+    },
+    {
+      "frame": 905,
+      "timestamp": 15.083333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5986651182174683,
+          "motorcycle_conf": 0.5986651182174683
+        }
+      ]
+    },
+    {
+      "frame": 906,
+      "timestamp": 15.1,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5523397922515869,
+          "motorcycle_conf": 0.5523397922515869
+        }
+      ]
+    },
+    {
+      "frame": 907,
+      "timestamp": 15.116666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4886726140975952,
+          "motorcycle_conf": 0.4886726140975952
+        }
+      ]
+    },
+    {
+      "frame": 908,
+      "timestamp": 15.133333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4323151111602783,
+          "motorcycle_conf": 0.4323151111602783
+        }
+      ]
+    },
+    {
+      "frame": 909,
+      "timestamp": 15.15,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.40236228704452515,
+          "motorcycle_conf": 0.40236228704452515
+        }
+      ]
+    },
+    {
+      "frame": 910,
+      "timestamp": 15.166666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6719096302986145,
+          "motorcycle_conf": 0.6719096302986145
+        }
+      ]
+    },
+    {
+      "frame": 911,
+      "timestamp": 15.183333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6014536619186401,
+          "motorcycle_conf": 0.6014536619186401
+        }
+      ]
+    },
+    {
+      "frame": 912,
+      "timestamp": 15.2,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5264120101928711,
+          "motorcycle_conf": 0.5264120101928711
+        }
+      ]
+    },
+    {
+      "frame": 916,
+      "timestamp": 15.266666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.40174105763435364,
+          "motorcycle_conf": 0.40174105763435364
+        }
+      ]
+    },
+    {
+      "frame": 917,
+      "timestamp": 15.283333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6496214270591736,
+          "motorcycle_conf": 0.6496214270591736
+        }
+      ]
+    },
+    {
+      "frame": 918,
+      "timestamp": 15.3,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5082424879074097,
+          "motorcycle_conf": 0.5082424879074097
+        }
+      ]
+    },
+    {
+      "frame": 921,
+      "timestamp": 15.35,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6202026605606079,
+          "motorcycle_conf": 0.6202026605606079
+        }
+      ]
+    },
+    {
+      "frame": 923,
+      "timestamp": 15.383333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3521931767463684,
+          "motorcycle_conf": 0.3521931767463684
+        }
+      ]
+    },
+    {
+      "frame": 924,
+      "timestamp": 15.4,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.40513551235198975,
+          "motorcycle_conf": 0.40513551235198975
+        }
+      ]
+    },
+    {
+      "frame": 925,
+      "timestamp": 15.416666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.619178295135498,
+          "motorcycle_conf": 0.619178295135498
+        }
+      ]
+    },
+    {
+      "frame": 926,
+      "timestamp": 15.433333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7141298651695251,
+          "motorcycle_conf": 0.7141298651695251
+        }
+      ]
+    },
+    {
+      "frame": 927,
+      "timestamp": 15.45,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6349326372146606,
+          "motorcycle_conf": 0.6349326372146606
+        }
+      ]
+    },
+    {
+      "frame": 928,
+      "timestamp": 15.466666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7744008302688599,
+          "motorcycle_conf": 0.7744008302688599
+        }
+      ]
+    },
+    {
+      "frame": 929,
+      "timestamp": 15.483333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7061893939971924,
+          "motorcycle_conf": 0.7061893939971924
+        }
+      ]
+    },
+    {
+      "frame": 930,
+      "timestamp": 15.5,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7810059785842896,
+          "motorcycle_conf": 0.7810059785842896
+        }
+      ]
+    },
+    {
+      "frame": 931,
+      "timestamp": 15.516666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7058337330818176,
+          "motorcycle_conf": 0.7058337330818176
+        }
+      ]
+    },
+    {
+      "frame": 932,
+      "timestamp": 15.533333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5956738591194153,
+          "motorcycle_conf": 0.5956738591194153
+        }
+      ]
+    },
+    {
+      "frame": 933,
+      "timestamp": 15.55,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6848651766777039,
+          "motorcycle_conf": 0.6848651766777039
+        }
+      ]
+    },
+    {
+      "frame": 934,
+      "timestamp": 15.566666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7050465941429138,
+          "motorcycle_conf": 0.7050465941429138
+        }
+      ]
+    },
+    {
+      "frame": 935,
+      "timestamp": 15.583333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5850833058357239,
+          "motorcycle_conf": 0.5850833058357239
+        }
+      ]
+    },
+    {
+      "frame": 936,
+      "timestamp": 15.6,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.552638828754425,
+          "motorcycle_conf": 0.552638828754425
+        }
+      ]
+    },
+    {
+      "frame": 937,
+      "timestamp": 15.616666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.42199596762657166,
+          "motorcycle_conf": 0.42199596762657166
+        }
+      ]
+    },
+    {
+      "frame": 941,
+      "timestamp": 15.683333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3158853054046631,
+          "motorcycle_conf": 0.3158853054046631
+        }
+      ]
+    },
+    {
+      "frame": 942,
+      "timestamp": 15.7,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3292106091976166,
+          "motorcycle_conf": 0.3292106091976166
+        }
+      ]
+    },
+    {
+      "frame": 946,
+      "timestamp": 15.766666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4630313813686371,
+          "motorcycle_conf": 0.4630313813686371
+        }
+      ]
+    },
+    {
+      "frame": 947,
+      "timestamp": 15.783333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4721601605415344,
+          "motorcycle_conf": 0.4721601605415344
+        }
+      ]
+    },
+    {
+      "frame": 950,
+      "timestamp": 15.833333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4011460840702057,
+          "motorcycle_conf": 0.4011460840702057
+        }
+      ]
+    },
+    {
+      "frame": 953,
+      "timestamp": 15.883333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3457430601119995,
+          "motorcycle_conf": 0.3457430601119995
+        }
+      ]
+    },
+    {
+      "frame": 956,
+      "timestamp": 15.933333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3285463750362396,
+          "motorcycle_conf": 0.3285463750362396
+        }
+      ]
+    },
+    {
+      "frame": 957,
+      "timestamp": 15.95,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4108082354068756,
+          "motorcycle_conf": 0.4108082354068756
+        }
+      ]
+    },
+    {
+      "frame": 958,
+      "timestamp": 15.966666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4255908131599426,
+          "motorcycle_conf": 0.4255908131599426
+        }
+      ]
+    },
+    {
+      "frame": 959,
+      "timestamp": 15.983333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5038776397705078,
+          "motorcycle_conf": 0.5038776397705078
+        }
+      ]
+    },
+    {
+      "frame": 960,
+      "timestamp": 16.0,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.38251808285713196,
+          "motorcycle_conf": 0.38251808285713196
+        }
+      ]
+    },
+    {
+      "frame": 961,
+      "timestamp": 16.016666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3829927444458008,
+          "motorcycle_conf": 0.3829927444458008
+        }
+      ]
+    },
+    {
+      "frame": 963,
+      "timestamp": 16.05,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.354748398065567,
+          "motorcycle_conf": 0.354748398065567
+        }
+      ]
+    },
+    {
+      "frame": 973,
+      "timestamp": 16.216666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.632166862487793,
+          "motorcycle_conf": 0.632166862487793
+        }
+      ]
+    },
+    {
+      "frame": 974,
+      "timestamp": 16.233333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4606429636478424,
+          "motorcycle_conf": 0.4606429636478424
+        }
+      ]
+    },
+    {
+      "frame": 976,
+      "timestamp": 16.266666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.39037996530532837,
+          "motorcycle_conf": 0.39037996530532837
+        }
+      ]
+    },
+    {
+      "frame": 977,
+      "timestamp": 16.283333333333335,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.3931216299533844,
+          "motorcycle_conf": 0.3931216299533844
+        }
+      ]
+    },
+    {
+      "frame": 978,
+      "timestamp": 16.3,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7471833229064941,
+          "motorcycle_conf": 0.7471833229064941
+        }
+      ]
+    },
+    {
+      "frame": 979,
+      "timestamp": 16.316666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5994755029678345,
+          "motorcycle_conf": 0.5994755029678345
+        }
+      ]
+    },
+    {
+      "frame": 980,
+      "timestamp": 16.333333333333332,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5284095406532288,
+          "motorcycle_conf": 0.5284095406532288
+        }
+      ]
+    },
+    {
+      "frame": 981,
+      "timestamp": 16.35,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6888583302497864,
+          "motorcycle_conf": 0.6888583302497864
+        }
+      ]
+    },
+    {
+      "frame": 982,
+      "timestamp": 16.366666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7793712615966797,
+          "motorcycle_conf": 0.7793712615966797
+        }
+      ]
+    },
+    {
+      "frame": 983,
+      "timestamp": 16.383333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7866745591163635,
+          "motorcycle_conf": 0.7866745591163635
+        }
+      ]
+    },
+    {
+      "frame": 984,
+      "timestamp": 16.4,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5757344365119934,
+          "motorcycle_conf": 0.5757344365119934
+        }
+      ]
+    },
+    {
+      "frame": 985,
+      "timestamp": 16.416666666666668,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.45390838384628296,
+          "motorcycle_conf": 0.45390838384628296
+        }
+      ]
+    },
+    {
+      "frame": 987,
+      "timestamp": 16.45,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.31725695729255676,
+          "motorcycle_conf": 0.31725695729255676
+        }
+      ]
+    },
+    {
+      "frame": 988,
+      "timestamp": 16.466666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4154375493526459,
+          "motorcycle_conf": 0.4154375493526459
+        }
+      ]
+    },
+    {
+      "frame": 989,
+      "timestamp": 16.483333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.611572802066803,
+          "motorcycle_conf": 0.611572802066803
+        }
+      ]
+    },
+    {
+      "frame": 990,
+      "timestamp": 16.5,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5249109268188477,
+          "motorcycle_conf": 0.5249109268188477
+        }
+      ]
+    },
+    {
+      "frame": 991,
+      "timestamp": 16.516666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6122891902923584,
+          "motorcycle_conf": 0.6122891902923584
+        }
+      ]
+    },
+    {
+      "frame": 992,
+      "timestamp": 16.533333333333335,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7338072061538696,
+          "motorcycle_conf": 0.7338072061538696
+        }
+      ]
+    },
+    {
+      "frame": 993,
+      "timestamp": 16.55,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4851641356945038,
+          "motorcycle_conf": 0.4851641356945038
+        }
+      ]
+    },
+    {
+      "frame": 994,
+      "timestamp": 16.566666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5778979063034058,
+          "motorcycle_conf": 0.5778979063034058
+        }
+      ]
+    },
+    {
+      "frame": 995,
+      "timestamp": 16.583333333333332,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5727340579032898,
+          "motorcycle_conf": 0.5727340579032898
+        }
+      ]
+    },
+    {
+      "frame": 996,
+      "timestamp": 16.6,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7924161553382874,
+          "motorcycle_conf": 0.7924161553382874
+        }
+      ]
+    },
+    {
+      "frame": 997,
+      "timestamp": 16.616666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.611213207244873,
+          "motorcycle_conf": 0.611213207244873
+        }
+      ]
+    },
+    {
+      "frame": 998,
+      "timestamp": 16.633333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7932125329971313,
+          "motorcycle_conf": 0.7932125329971313
+        }
+      ]
+    },
+    {
+      "frame": 999,
+      "timestamp": 16.65,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8436094522476196,
+          "motorcycle_conf": 0.8436094522476196
+        }
+      ]
+    },
+    {
+      "frame": 1000,
+      "timestamp": 16.666666666666668,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8733296990394592,
+          "motorcycle_conf": 0.8733296990394592
+        }
+      ]
+    },
+    {
+      "frame": 1001,
+      "timestamp": 16.683333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8181997537612915,
+          "motorcycle_conf": 0.8181997537612915
+        }
+      ]
+    },
+    {
+      "frame": 1002,
+      "timestamp": 16.7,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6951580047607422,
+          "motorcycle_conf": 0.6951580047607422
+        }
+      ]
+    },
+    {
+      "frame": 1003,
+      "timestamp": 16.716666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6947248578071594,
+          "motorcycle_conf": 0.6947248578071594
+        }
+      ]
+    },
+    {
+      "frame": 1004,
+      "timestamp": 16.733333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7557931542396545,
+          "motorcycle_conf": 0.7557931542396545
+        }
+      ]
+    },
+    {
+      "frame": 1005,
+      "timestamp": 16.75,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.857115626335144,
+          "motorcycle_conf": 0.857115626335144
+        }
+      ]
+    },
+    {
+      "frame": 1006,
+      "timestamp": 16.766666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8502316474914551,
+          "motorcycle_conf": 0.8502316474914551
+        }
+      ]
+    },
+    {
+      "frame": 1007,
+      "timestamp": 16.783333333333335,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8041643500328064,
+          "motorcycle_conf": 0.8041643500328064
+        }
+      ]
+    },
+    {
+      "frame": 1008,
+      "timestamp": 16.8,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7468218803405762,
+          "motorcycle_conf": 0.7468218803405762
+        }
+      ]
+    },
+    {
+      "frame": 1009,
+      "timestamp": 16.816666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8693210482597351,
+          "motorcycle_conf": 0.8693210482597351
+        }
+      ]
+    },
+    {
+      "frame": 1010,
+      "timestamp": 16.833333333333332,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.8259417414665222,
+          "motorcycle_conf": 0.8259417414665222
+        }
+      ]
+    },
+    {
+      "frame": 1011,
+      "timestamp": 16.85,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5767192244529724,
+          "motorcycle_conf": 0.5767192244529724
+        }
+      ]
+    },
+    {
+      "frame": 1012,
+      "timestamp": 16.866666666666667,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.6806336045265198,
+          "motorcycle_conf": 0.6806336045265198
+        }
+      ]
+    },
+    {
+      "frame": 1013,
+      "timestamp": 16.883333333333333,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5333423614501953,
+          "motorcycle_conf": 0.5333423614501953
+        }
+      ]
+    },
+    {
+      "frame": 1014,
+      "timestamp": 16.9,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7820401787757874,
+          "motorcycle_conf": 0.7820401787757874
+        }
+      ]
+    },
+    {
+      "frame": 1015,
+      "timestamp": 16.916666666666668,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7858632802963257,
+          "motorcycle_conf": 0.7858632802963257
+        }
+      ]
+    },
+    {
+      "frame": 1017,
+      "timestamp": 16.95,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.5564519762992859,
+          "motorcycle_conf": 0.5564519762992859
+        }
+      ]
+    },
+    {
+      "frame": 1018,
+      "timestamp": 16.966666666666665,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7117992043495178,
+          "motorcycle_conf": 0.7117992043495178
+        }
+      ]
+    },
+    {
+      "frame": 1019,
+      "timestamp": 16.983333333333334,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.7571596503257751,
+          "motorcycle_conf": 0.7571596503257751
+        }
+      ]
+    },
+    {
+      "frame": 1020,
+      "timestamp": 17.0,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.48886120319366455,
+          "motorcycle_conf": 0.48886120319366455
+        }
+      ]
+    },
+    {
+      "frame": 1021,
+      "timestamp": 17.016666666666666,
+      "count": 1,
+      "details": [
+        {
+          "rider_conf": 0.4695243835449219,
+          "motorcycle_conf": 0.4695243835449219
+        }
+      ]
+    }
+  ],
+  "ocr_enabled": true,
+  "plates_read": 0
+}

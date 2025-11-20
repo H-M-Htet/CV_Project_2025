@@ -23,7 +23,7 @@ associator = ObjectAssociator()
 visualizer = DetectionVisualizer()
 
 # Get test images
-valid_images = list(Path('../data/helmet_dataset/test/images').glob('*.[jp][pn][g]'))[60:]  # Test first 20
+valid_images = list(Path('../data/helmet_dataset/test/images').glob('*.[jp][pn][g]'))[60:89]  # Test first 20
 
 print(f"Testing on {len(valid_images)} images...")
 

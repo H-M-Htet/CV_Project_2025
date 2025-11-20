@@ -1,0 +1,12 @@
+==================================================
+VIOLATION DETECTION SUMMARY
+==================================================
+
+Total Frames Processed: 1505
+Total Motorcycles Detected: 890
+Violations Detected: 218
+Safe Riders: 478
+Violation Rate: 24.5%
+
+Detailed records: violations.csv
+Generated: 2025-11-21 02:49:37
