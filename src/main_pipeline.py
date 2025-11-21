@@ -122,15 +122,17 @@ class ViolationDetectionSystem:
         
         # Step 4: Find violations
         violations = self.associator.process_frame(motorcycles, riders, plates)
+        log.info(f"DEBUG: Total violations={len(violations)}, riders={len(riders)}")
         self.stats['total_violations'] += len(violations)
         
         # Step 5: Filter violations by ROI
-        violations_in_roi = []
-        for v in violations:
-            if self.roi_manager.is_in_roi(v['rider_bbox']):
-                violations_in_roi.append(v)
+        if self.roi_manager.has_roi:
+            violations_in_roi = [v for v in violations if self.roi_manager.is_in_roi(v['rider_bbox'])]
+        else:
+            violations_in_roi = violations
         
         self.stats['violations_in_roi'] += len(violations_in_roi)
+        log.info(f"DEBUG: violations_in_roi={len(violations_in_roi)}")
         
         # Step 6: Count safe riders
         safe_riders = [r for r in riders if r['class'] == 1]  # Wearing_helmet
@@ -164,7 +166,9 @@ class ViolationDetectionSystem:
             self.logger.log_violation(frame_number, timestamp, v)
         
         # Step 8: Visualize
-        result_img = self.visualizer.draw_violations(img_rgb, violations, draw_motorcycles=False)
+        log.info(f"DEBUG: Drawing {len(violations_in_roi)} violations")
+        result_img = self.visualizer.draw_violations(img_rgb, violations_in_roi, draw_motorcycles=False)
+        log.info(f"DEBUG: Result image shape={result_img.shape}")
         
         # Step 9: Draw ROI
         result_img = self.roi_manager.draw_roi(result_img)

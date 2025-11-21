@@ -20,7 +20,7 @@ class ObjectAssociator:
     def process_frame(self, motorcycles, riders, plates):
         """
         CORRECT MAPPING:
-        0 = No_helmet → violation
+        0 = No_helmet → violation (only if on motorcycle)
         1 = Wearing_helmet → safe
         2 = Person_on_Bike → check for helmet
         """
@@ -33,16 +33,25 @@ class ObjectAssociator:
         
         log.debug(f"No_helmet(0)={len(no_helmet)}, Wearing_helmet(1)={len(wearing_helmet)}, Person_on_Bike(2)={len(person_on_bike)}")
         
-        # Rule 1: No_helmet (0) = violation
+        # Rule 1: No_helmet (0) = violation ONLY if near motorcycle
         for person in no_helmet:
-            violation = {
-                'rider_bbox': person['bbox'],
-                'rider_conf': person['conf'],
-                'rider_class': 0,
-                'motorcycle_bbox': person['bbox'],
-                'motorcycle_conf': person['conf']
-            }
-            violations.append(violation)
+            # Find nearest motorcycle
+            moto = self._find_nearest_motorcycle(person['bbox'], motorcycles)
+            
+            if moto:
+                # Check distance - must be close (not pedestrian)
+                dist = self._calculate_distance(person['bbox'], moto['bbox'])
+                if dist < 200:  # Within 200px = on motorcycle
+                    violation = {
+                        'rider_bbox': person['bbox'],
+                        'rider_conf': person['conf'],
+                        'rider_class': 0,
+                        'motorcycle_bbox': moto['bbox'],
+                        'motorcycle_conf': moto['conf']
+                    }
+                    violations.append(violation)
+                else:
+                    log.debug(f"Skipped pedestrian (dist={dist:.0f}px)")
         
         # Rule 2: Person_on_Bike (2) without Wearing_helmet (1) = violation
         for person in person_on_bike:
@@ -74,6 +83,31 @@ class ObjectAssociator:
         
         log.info(f"Found {len(violations)} violations")
         return violations
+    
+    def _find_nearest_motorcycle(self, bbox, motorcycles):
+        """Find nearest motorcycle to bbox"""
+        if not motorcycles:
+            return None
+        
+        center = self._get_center(bbox)
+        best_moto = None
+        min_dist = float('inf')
+        
+        for moto in motorcycles:
+            moto_center = self._get_center(moto['bbox'])
+            dist = np.sqrt((center[0]-moto_center[0])**2 + (center[1]-moto_center[1])**2)
+            
+            if dist < min_dist:
+                min_dist = dist
+                best_moto = moto
+        
+        return best_moto
+    
+    def _calculate_distance(self, bbox1, bbox2):
+        """Calculate center-to-center distance"""
+        c1 = self._get_center(bbox1)
+        c2 = self._get_center(bbox2)
+        return np.sqrt((c1[0]-c2[0])**2 + (c1[1]-c2[1])**2)
     
     def _find_nearest_plate(self, bbox, plates):
         if not plates:
