@@ -88,6 +88,22 @@ A violation is flagged when:
 
 *(Add images from `runs/detect/val*/` here)*
 
+License Plate Detection Model
+
+A separate YOLO model was trained to detect license plates for downstream OCR.  
+The model was evaluated using standard precision-recall metrics, confidence curves, and confusion matrices.
+
+### **Key Metrics**
+- **mAP@0.5:** ~0.918  
+- **Peak F1-score:** ~0.89 at confidence ≈ 0.38  
+- **Precision:** ~0.92  
+- **Recall:** ~0.88  
+
+### **Findings**
+- Good precision makes detections clean.  
+- Lower recall at higher confidence → plates are small and easily missed.  
+- Best operating confidence ≈ **0.3–0.5**.
+
 ---
 
 ## ⚠ OCR Status
