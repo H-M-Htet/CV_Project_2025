@@ -103,8 +103,17 @@ class ViolationDetectionSystem:
         img_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         
         # Step 1: Detection
-        motorcycles, riders, plates = self.detector.detect_all(img_rgb)
-        self.stats['total_motorcycles_detected'] += len(motorcycles)
+        motorcycles, riders, plates = self.detector.detect_all(frame)
+
+        log.info(f"DEBUG: detections -> motorcycles={len(motorcycles)}, riders={len(riders)}, plates={len(plates)}")
+        if len(motorcycles) > 0:
+            # show first motorcycle bbox/conf if available (guard keys per your detector output)
+            try:
+                first = motorcycles[0]
+                log.debug(f"DEBUG: first motorcycle: bbox={first.get('bbox')}, conf={first.get('conf')}")
+            except Exception as e:
+                log.debug(f"DEBUG: couldn't inspect first motorcycle: {e}")
+                self.stats['total_motorcycles_detected'] += len(motorcycles)
         
         # Step 2: Track motorcycles (assign unique IDs)
         tracked_motorcycles = self.tracker.update(motorcycles, frame_number)
